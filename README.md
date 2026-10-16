@@ -67,3 +67,4 @@ Short notes on problems hit and how they were fixed.
 ## Author
 
 Neeraj - building towards a DevOps career.
+Application source code is from Docker's example voting app. All Dockerfiles, compose files, Kubernetes manifests, and infrastructure in this repository were written by me.
