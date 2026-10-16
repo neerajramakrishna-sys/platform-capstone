@@ -36,15 +36,14 @@ Code -> CI pipeline -> Container registry -> Kubernetes cluster -> Monitoring
 ## Progress
 
 - [x] Repo and folder structure set up
+- [x] Application added and verified running with Docker Compose
 - [ ] Infrastructure created with Terraform
-- [ ] Application containerized with Docker
 - [ ] CI pipeline builds and pushes the image
 - [ ] Application deployed to Kubernetes
 - [ ] GitOps delivery set up with ArgoCD
 - [ ] Monitoring and dashboards set up with Prometheus and Grafana
 - [ ] Runbooks written for common incidents
-
-Tick each box (`- [x]`) when the stage is working and committed.
+      
 
 ## How to Run
 
@@ -63,6 +62,7 @@ Short notes on problems hit and how they were fixed.
 | Date | Problem | Fix |
 |---|---|---|
 | 2026-10-16 | Folders created locally did not show on GitHub | Git does not track empty folders, so I added a `.gitkeep` file to each one and pushed. |
+| 2026-10-16 | Redis and Postgres containers showed unhealthy on EC2 | Healthcheck scripts lost their executable bit when copied from Windows. Fixed with `chmod +x` and a `.gitattributes` file that keeps `.sh` files with LF line endings. |
 
 ## Author
 
