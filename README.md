@@ -4,42 +4,45 @@ A hands-on DevOps platform project built step by step, with every stage document
 
 ## Goal
 
-Build a production-style platform that takes an application from code commit to a running deployment, with automated builds, GitOps delivery, and monitoring
+Build a production-style platform that takes an application from code commit to a running deployment, with automated builds, GitOps delivery, and monitoring.
 
 ## Architecture
 
-Code -> CI pipeline -> Container registry -> Kubernetes cluster -> Monitoring>
+Code -> CI pipeline -> Container registry -> Kubernetes cluster -> Monitoring
 
 ## Tech Stack
 
 | Area | Tools |
 |---|---|
-| Cloud | <AWS> |
-| Containers and orchestration | <Docker, Kubernetes> |
-| CI/CD | <Jenkins or GitHub Actions> |
-| GitOps | <ArgoCD> |
-| Infrastructure as Code | <Terraform> |
-| Observability | <Prometheus, Grafana> |
+| Cloud | AWS |
+| Containers and orchestration | Docker, Kubernetes |
+| CI/CD | Jenkins or GitHub Actions |
+| GitOps | ArgoCD |
+| Infrastructure as Code | Terraform |
+| Observability | Prometheus, Grafana |
 
 ## Repository Structure
 
 | Folder | Purpose |
 |---|---|
-| `<app>/` | <The application source code and its Dockerfile> |
-| `<docs>/` | <Architecture diagrams, screenshots, and project documentation> |
-| `<k8s>/` | <Kubernetes manifests (or Helm charts) that deploy the application to the cluster> |
-| `<notes>/` | <Daily learning notes and the problems that I hit and fixed> |
-| `<observability>/` | <Prometheus and Grafana configuration, dashboards, and alert rules> |
-| `<runbooks>/` | <Step-by-step guides for handling incidents, such as what to do when a pod crashes or the site is down> |
-| `<terraform>/` | <Infrastructure as Code that creates the cloud resources, such as the network and the cluster> |
+| `app/` | The application source code and its Dockerfile. |
+| `docs/` | Architecture diagrams, screenshots, and project documentation. |
+| `k8s/` | Kubernetes manifests (or Helm charts) that deploy the application to the cluster. |
+| `notes/` | Daily learning notes and the problems I hit and fixed. |
+| `observability/` | Prometheus and Grafana configuration, dashboards, and alert rules. |
+| `runbooks/` | Step-by-step guides for handling incidents, such as what to do when a pod crashes or the site is down. |
+| `terraform/` | Infrastructure as Code that creates the cloud resources, such as the network and the cluster. |
 
 ## Progress
 
-- [ ] <Stage 1 - e.g. Repo and folder structure set up>
-- [ ] <Stage 2>
-- [ ] <Stage 3>
-- [ ] <Stage 4>
-- [ ] <Stage 5>
+- [x] Repo and folder structure set up
+- [ ] Infrastructure created with Terraform
+- [ ] Application containerized with Docker
+- [ ] CI pipeline builds and pushes the image
+- [ ] Application deployed to Kubernetes
+- [ ] GitOps delivery set up with ArgoCD
+- [ ] Monitoring and dashboards set up with Prometheus and Grafana
+- [ ] Runbooks written for common incidents
 
 Tick each box (`- [x]`) when the stage is working and committed.
 
@@ -47,10 +50,10 @@ Tick each box (`- [x]`) when the stage is working and committed.
 
 1. Clone the repository:
    ```bash
-   git clone <https://github.com/neerajramakrishna-sys/platform-capstone>
-   cd <platform-capstone>
+   git clone https://github.com/neerajramakrishna-sys/platform-capstone
+   cd platform-capstone
    ```
-2. Prerequisites: <list tools and versions needed, e.g. Docker, kubectl, AWS CLI>
+2. Prerequisites: Git, Docker, kubectl, Terraform, and the AWS CLI.
 3. Follow the README inside each folder, in the order shown in the Progress list.
 
 ## Learning Log
@@ -59,7 +62,7 @@ Short notes on problems hit and how they were fixed.
 
 | Date | Problem | Fix |
 |---|---|---|
-| <YYYY-MM-DD> | <what went wrong> | <what solved it> |
+| 2026-10-16 | Folders created locally did not show on GitHub | Git does not track empty folders, so I added a `.gitkeep` file to each one and pushed. |
 
 ## Author
 
