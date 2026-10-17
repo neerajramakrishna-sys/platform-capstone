@@ -1,29 +1,3 @@
-  GNU nano 9.2                                                                     dockerFile                                                                     Modified
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 FROM python:3.11-slim
 WORKDIR /app
 COPY requirements.txt .
